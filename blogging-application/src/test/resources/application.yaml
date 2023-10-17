@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: inkSpire
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inkspire_test?createDatabaseIfNotExist=true
+    username:
+    password:
+    initialization-mode: always
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
